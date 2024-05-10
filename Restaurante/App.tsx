@@ -13,14 +13,14 @@ import ProgresoPedido from './screens/ProgresoPedido';
 
 import FirebaseState from './context/firebase/firabaseState';
 import PedidoState from './context/pedidos/pedidosState';
-import {  } from 'native-base';
+import { NativeBaseProvider } from "native-base";
 
 
 const Stack = createStackNavigator();
 
 const App = () => {
     return (
-        <>
+        <NativeBaseProvider>
             <FirebaseState>
                 <PedidoState>
                     <NavigationContainer>
@@ -59,7 +59,7 @@ const App = () => {
                     </NavigationContainer>
                 </PedidoState>
             </FirebaseState>
-        </>
+        </NativeBaseProvider>
     )
 }
 
