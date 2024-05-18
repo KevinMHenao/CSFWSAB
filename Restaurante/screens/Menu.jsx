@@ -1,10 +1,10 @@
 import React, { useEffect, useContext, Fragment } from "react"
-import { View, Text } from "react-native"
+//import { View, Text } from "react-native"
 import globalStyles from "../styles/globalStyles"
 import { useNavigation, useNavigationBuilder } from "@react-navigation/native"
 import FirebaseContext from "../context/firebase/firebaseContext"
 import PedidosContext from "../context/pedidos/pedidosContext"
-//import { NativeBaseProvider, View, ScrollView, Text, Avatar } from "native-base"
+import { NativeBaseProvider, View, ScrollView, Text, Avatar } from "native-base"
 import { List } from "react-native-paper"
 
 const Menu = () => {
@@ -16,7 +16,7 @@ const Menu = () => {
     }, [])
 
     return (
-        <NativeBaseProvider>
+       <NativeBaseProvider>
             <ScrollView>
                 <View>
                     {menu.map((plato, i) => {
