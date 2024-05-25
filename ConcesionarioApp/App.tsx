@@ -2,8 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Catalog from './screens/Catalog';
 import Home from './screens/Home';
+import Catalog from './screens/Catalog';
 import Garage from './screens/Garage';
 import TestDrive from './screens/TestDrive';
 import Contact from './screens/Contact';
