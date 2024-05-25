@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
     const navigation = useNavigation();
-    const handleButtonPress = (buttonIndex) => {
+    const buttonPress = (buttonIndex) => {
         console.log('Botón presionado:', buttonIndex);
         if (buttonIndex === 1) {
             navigation.navigate('Catalog');
@@ -24,25 +24,25 @@ const Home = () => {
         <View style={styles.container}>
             <TouchableOpacity
                 style={[styles.button, styles.buttonColor]}
-                onPress={() => handleButtonPress(1)}
+                onPress={() => buttonPress(1)}
             >
                 <Text style={styles.buttonText}>Catalogo</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 style={[styles.button, styles.buttonColor]}
-                onPress={() => handleButtonPress(2)}
+                onPress={() => buttonPress(2)}
             >
                 <Text style={styles.buttonText}>Test Drive</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 style={[styles.button, styles.buttonColor]}
-                onPress={() => handleButtonPress(3)}
+                onPress={() => buttonPress(3)}
             >
                 <Text style={styles.buttonText}>Mantenimientos</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 style={[styles.button, styles.buttonColor]}
-                onPress={() => handleButtonPress(4)}
+                onPress={() => buttonPress(4)}
             >
                 <Text style={styles.buttonText}>Contactenos</Text>
             </TouchableOpacity>
