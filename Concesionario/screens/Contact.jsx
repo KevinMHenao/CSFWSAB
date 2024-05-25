@@ -28,6 +28,15 @@ const Contact = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contáctenos</Text>
+      <Text style={styles.paragraph}>
+        Concesionario el mejor. Si deseas más informacion de nosotros o tienes alguna PQRS puedes dejarla ingresando los datos en la parte inferior.
+      </Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Nombre"
+        value={name}
+        onChangeText={setName}
+      />
       <TextInput
         style={styles.input}
         placeholder="Correo Electrónico"
@@ -42,12 +51,6 @@ const Contact = () => {
         onChangeText={setMessage}
         multiline
         numberOfLines={4}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Nombre"
-        value={name}
-        onChangeText={setName}
       />
       <Button title="Enviar Mensaje" onPress={sendMessage} />
     </View>
@@ -77,6 +80,11 @@ const styles = StyleSheet.create({
   },
   messageInput: {
     height: 100,
+  },
+  paragraph: {
+    textAlign: 'center',
+    fontSize: 16,
+    lineHeight: 24,
   },
 });
 

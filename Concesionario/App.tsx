@@ -7,6 +7,7 @@ import Catalog from './screens/Catalog';
 import Garage from './screens/Garage';
 import TestDrive from './screens/TestDrive';
 import Contact from './screens/Contact';
+import CarDetail from './screens/CarDetail';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="Garage" component={Garage} />
         <Stack.Screen name="TestDrive" component={TestDrive} />
         <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="CarDetail" component={CarDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
